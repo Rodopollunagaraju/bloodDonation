@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import About from "../components/About";
 
 export default function Home() {
@@ -26,12 +27,12 @@ export default function Home() {
             Your blood donation can be the lifeline for someone in need. Join us in making a difference.
           </p>
           <div className="mt-6 space-x-4">
-            <a href="#donate" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition">
+            <Link to="/donor" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition">
               Become a Donor
-            </a>
-            <a href="#request" className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-200 transition">
+            </Link>
+            <Link to="/patient" className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-200 transition">
               Request Blood
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function About() {
     return (
       <section id="about" className="py-20 bg-gray-100 text-center">
@@ -25,9 +27,9 @@ export default function About() {
   
           {/* Call to Action */}
           <div className="mt-8">
-            <a href="#donate" className="px-6 py-3 bg-red-600 text-white rounded-lg font-semibold shadow-md hover:bg-red-700 transition">
+            <Link to="/donor" className="px-6 py-3 bg-red-600 text-white rounded-lg font-semibold shadow-md hover:bg-red-700 transition">
               Become a Donor
-            </a>
+            </Link>
           </div>
         </div>
       </section>
