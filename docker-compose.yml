@@ -1,0 +1,24 @@
+services:
+  backend:
+    image: nagaraju2211/mybackend:02
+    container_name: bloodbon-backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5000:5000"
+    networks:
+      - bloodbon-network
+
+  frontend:
+    image: nagaraju2211/myfrontend:01
+    container_name: bloodbon-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - bloodbon-network
+
+networks:
+  bloodbon-network:
+    driver: bridge
