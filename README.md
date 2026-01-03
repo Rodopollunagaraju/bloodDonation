@@ -25,12 +25,6 @@ This project is designed for **college projects, internships, and placement-read
 * Track request status in real time
 * See donor details after approval
 
-### 🏥 Blood Bank
-
-* Manage blood inventory
-* Fulfill patient requests if no donor is available
-* Request donors when stock is low
-
 ### 📊 Dashboard
 
 * Role-based dashboards (Donor / Patient / Blood Bank)
@@ -196,7 +190,6 @@ Backend runs on: `http://localhost:5000`
 | --------- | ---------------------------------------- |
 | Donor     | Accept / Reject requests, View donations |
 | Patient   | Request blood, Track status              |
-| BloodBank | Manage stock, Fulfill requests           |
 
 ---
 
@@ -205,13 +198,12 @@ Backend runs on: `http://localhost:5000`
 * Login / Register Page
 * Donor Dashboard
 * Patient Request Page
-* Blood Bank Inventory
 
 ---
 
 ## 🎯 Use Cases
 
-* College Mini / Major Project
+* College Mini Project
 * MERN Stack Practice
 * Internship Portfolio Project
 * Real-world CRUD + Auth Application
